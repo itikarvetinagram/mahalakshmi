@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@font-face{
+    font-family: myFirstFont;
+    src:url(gan.png);
+}
+header{
+    width: 100%;
+    height: 70vw;
+    background-image: url('back.jpg');
+    background-size: 100% 100%;
+    animation: ganpatiji 1s infinite;
+}
+header h2{
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 4em;
+    font-weight: 400;
+}
+header h2 span{
+    font-family: myFirstFont;
+}
+@keyframes ganpatiji{
+    0%{color:red;}
+    30%{color:pink;}
+    40%{color:#fc8704}
+    75%{color:#42bfeb;}
+    100%{color:green;}
+}
+.centerimg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-30%,-20%);
+}
+.centerimg h3{
+    width:100%;
+    color:#000;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 400;
+    word-spacing: 10px;
+}
+@media (max-width:600px){
+    header h2{
+        word-spacing: 5px;
+        font-size: 3em;
+    }
+    .centerimg{
+        margin-top: 60px;
+    }
+    .centerimg img{
+        width: 250px;
+    }
+    .centerimg h3{
+        font-size: 1.2em;
+        word-spacing: 0px;
+        width:100%;
+
+    }
+}

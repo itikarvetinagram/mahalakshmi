@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+img{
+  background-color: rgb(255, 109, 51);
+  background-size: 10px;
+}
+
+/*header style*/
+
+/*home style*/
+
+
+.head{
+    background: white;
+    color: orangered;
+    padding: 10px 30px;
+    font-size: 10px;
+    background-image: 20px;
+    border-top: 10px solid rgb(173, 164, 223);
+    font-family: sans-serif;
+}
+/*navbar style*/
+.nav{
+    background: rgb(147, 212, 151);
+    text-align: center;
+    padding: 0px 0px;
+}
+.main-menu> li{
+    display: inline-block;
+    padding: 10px 0px;
+    margin-left: 10px;
+    border-left: 1px solid rgb(166, 197, 25);
+    width: 150px;
+    color: #b81010;
+    font-size: 20px;
+    transition: .4s;
+}
+/*submenu style*/
+.sub-menu{
+    display: none;
+    width: 300px;
+    list-style-type: none;
+    position: absolute;
+    boder:5px solid white;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: left;
+    box-shadow: 1px 1px 1px gray;
+}
+.sub-menu:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid white;
+    position: absolute;
+    margin: -30px 0px 0px 60px;
+}
+
+ .sub-menu>li{  
+    padding: 10px;
+    color: white;
+    background: rgb(255, 252, 51);
+    font-size: 20px;
+
+ }
+ /*hover menu effects*/
+
+ .main-menu li:hover, .sub-menu li:hover{
+    background: #35c;
+ }
+  /*show submenus*/
+
+  .main-menu li:hover .sub-menu{
+    display: block;
+  }
+ .mg{
+  background-color: rgb(238, 255, 0);
+ }  
+ 
